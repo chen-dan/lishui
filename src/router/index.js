@@ -26,7 +26,7 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    redirect: "/cc",
+    redirect: "/TaskManagement",
     component: Home,
     meta: {
       title: "首页",
@@ -35,13 +35,37 @@ const routes = [
     alwaysShow: true,
     children: [
       {
-        path: "/cc",
+        path: "/PlanManagement",
         component: () =>
-          import(/* webpackChunkName: "about" */ "../views/About.vue"),
+          import(/* webpackChunkName: "PlanMangement" */ "../components/planManagement/PlanManagement.vue"),
         meta: {
-          title: "cc",
+          title: "计划管理",
         }
-      }
+      },
+	  {
+	    path: "/DistrictManagement",
+	    component: () =>
+	      import(/* webpackChunkName: "DistrictManagement" */ "../components/districtManagement/DistrictManagement.vue"),
+	    meta: {
+	      title: "片区管理",
+	    }
+	  },
+	  {
+	    path: "/TaskManagement",
+	    component: () =>
+	      import(/* webpackChunkName: "TaskManagement" */ "../components/taskManagement/TaskManagement.vue"),
+	    meta: {
+	      title: "任务管理",
+	    }
+	  },
+	  {
+	    path: "/EventManagement",
+	    component: () =>
+	      import(/* webpackChunkName: "EventManagement" */ "../components/eventManagement/EventManagement.vue"),
+	    meta: {
+	      title: "事件管理",
+	    }
+	  }
     ]
   },
   {

@@ -1,0 +1,90 @@
+/*
+* 	重写button组的样式
+*	重写button组添加plain的样式
+*/
+.el-button-group .el-button--primary:first-child {
+	border-right-color: #4b77be;
+}
+.el-button-group .el-button--primary:last-child {
+	border-left-color: #4b77be;
+}
+.el-button-group .el-button--primary:not(:first-child):not(:last-child) {
+	border-left-color: #4b77be;
+	border-right-color: #4b77be;
+}
+.el-button-group .el-button {
+	padding: 6px 15px;
+	height: 28px;
+	font-size: 12px;
+}
+.el-button-group .el-button--primary:hover,
+.el-button-group .el-button--primary.is-plain:hover{
+	color: #ffffff;
+	background: #4b77be;
+}
+.el-button-group .el-button--primary:focus,
+.el-button-group .el-button--primary:hover {
+	color: #4b77be;
+	background: #ffffff;
+}
+.el-button-group .el-button--primary.is-active,
+.el-button-group .el-button--primary:active {
+	color: #4b77be;
+	background: #ffffff;
+}
+.el-button-group .el-button--primary.is-plain {
+	color: #4b77be;
+	background: #ffffff;
+	border-color: #4b77be;
+}
+.el-button-group .el-button--primary.is-plain.is-active,
+.el-button-group .el-button--primary.is-plain:active {
+	color: #4b77be;
+	background: #ffffff;
+}
+.el-button-group .el-button--primary:focus,
+.el-button-group .el-button--primary.is-plain:focus {
+	color: #4b77be;
+	background: #FFFFFF;
+}
+
+/*
+*	重写搜索框的样式
+*/
+.el-input {
+	font-size: 12px;
+}
+.el-input__inner {
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #4b77be;
+}
+.el-input__icon {
+	line-height: 28px;
+}
+.el-input.is-active .el-input__inner,
+.el-input__inner:focus {
+	border-color: #C0C4CC;
+	outline: 0
+}
+
+/*
+* 	重写button样式
+*/
+.el-button--primary {
+	background-color: #4b77be;
+	border-color: #4b77be;
+}
+.el-button {
+	padding: 6px 15px;
+	font-size: 12px;
+}
+.el-button--primary:hover {
+	background-color: #395f9d;
+	border-color: #395f9d;
+}
+.el-button--primary:active,
+.el-button--primary:focus {
+	background-color: #4b77be;
+	border-color: #4b77be;
+}
