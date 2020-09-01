@@ -49,7 +49,7 @@
 }
 
 /*
-*	重写搜索框的样式
+*	重写input的样式
 */
 .el-input {
 	font-size: 12px;
@@ -66,6 +66,14 @@
 .el-input__inner:focus {
 	border-color: #C0C4CC;
 	outline: 0
+}
+
+/*
+*	重写下拉框
+*/
+.el-select .el-input__inner:focus,
+.el-select .el-input.is-focus .el-input__inner {
+	border-color: #4b77be;
 }
 
 /*
@@ -87,4 +95,62 @@
 .el-button--primary:focus {
 	background-color: #4b77be;
 	border-color: #4b77be;
+}
+
+/*
+* 	重写table样式
+*/
+.el-table {
+	font-size: 12px;
+}
+.el-table th {
+	background-color: #4b77be;
+}
+.el-table thead {
+	color: #FFFFFF;
+}
+.el-table th, .el-table td {
+	padding: 5px;
+}
+.el-table-column--selection .cell {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*
+*	重写dialog对话框样式
+*/
+.el-dialog__header {
+	padding: 0 80px 0 20px;
+	border-bottom: 1px solid #eee;
+	background: #4b77be;
+	height: 30px;
+	line-height: 30px;
+}
+.el-dialog__title {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.el-dialog__headerbtn {
+	top: 6px;
+}
+.el-dialog__headerbtn .el-dialog__close {
+	color: #FFFFFF;
+}
+.el-dialog__body {
+	padding: 16px;
+}
+
+/*
+*	重写form样式
+*/
+label {
+	font-weight: 400;
+}
+.el-form-item__label {
+	color: #333333;
+	font-size: 12px;
+}
+.el-form-item__error {
+	padding-top: 0;
 }
