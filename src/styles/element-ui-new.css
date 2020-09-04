@@ -67,10 +67,17 @@
 	border-color: #C0C4CC;
 	outline: 0
 }
-
+.el-input--mini .el-input__inner{
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+}
 /*
 *	重写下拉框
 */
+.el-select {
+	width: 100%;
+}
 .el-select .el-input__inner:focus,
 .el-select .el-input.is-focus .el-input__inner {
 	border-color: #4b77be;
@@ -96,6 +103,9 @@
 	background-color: #4b77be;
 	border-color: #4b77be;
 }
+.el-button--mini {
+	padding: 5px 10px;
+}
 
 /*
 * 	重写table样式
@@ -116,10 +126,16 @@
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
+.el-table__body tr.current-row > td,
+.el-table--striped .el-table__body tr.el-table__row--striped.current-row td {
+	background-color: #c6e4fd;
+}
 /*
 *	重写dialog对话框样式
 */
+.el-dialog {
+	width: 800px;
+}
 .el-dialog__header {
 	padding: 0 80px 0 20px;
 	border-bottom: 1px solid #eee;
@@ -153,4 +169,23 @@ label {
 }
 .el-form-item__error {
 	padding-top: 0;
+}
+.el-form-item__content .el-button--primary.is-plain{
+	border-color: #4b77be;
+	background: #FFFFFF;
+	color: #4b77be;
+}
+.el-form-item__content .el-button--primary.is-plain:hover {
+	color: #ffffff;
+	background: #4b77be;
+}
+
+/*
+*	重写分页样式
+*/
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+	color: #4b77be;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+	background-color: #4b77be;
 }
